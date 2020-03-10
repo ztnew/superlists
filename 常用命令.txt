@@ -1,0 +1,11 @@
+进入应用目录
+cd e:/python/superlists
+
+功能测试
+python functional_tests.py
+
+启动服务器
+python manage.py runserver
+
+运行单元测试
+python manage.py test
