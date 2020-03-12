@@ -9,3 +9,10 @@ python manage.py runserver
 
 运行单元测试
 python manage.py test
+
+以简洁的一行显示历史提交，包含简洁哈希索引值
+git log --oneline
+
+
+回退到某个历史版本
+Git checkout 375ce42
