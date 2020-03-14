@@ -2,13 +2,13 @@
 cd e:/python/superlists
 
 功能测试
-python functional_tests.py
+python manage.py test functional_tests
 
 启动服务器
 python manage.py runserver
 
 运行单元测试
-python manage.py test
+python manage.py test lists
 
 以简洁的一行显示历史提交，包含简洁哈希索引值
 git log --oneline
