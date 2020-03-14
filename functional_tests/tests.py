@@ -18,7 +18,6 @@ class NewVisitorTest(LiveServerTestCase):
         start_time=time.time()
         while True:
             try:
-
                 table=self.browser.find_element_by_id('id_list_table')
                 rows=table.find_elements_by_tag_name('tr')
                 self.assertIn(row_text,[row.text for row in rows])
@@ -78,8 +77,9 @@ class NewVisitorTest(LiveServerTestCase):
         #伊迪丝新建一个待办事项清单
         self.browser.get(self.live_server_url)
         inputbox=self.browser.find_element_by_id('id_new_item')
-        inputbox.send_keys('Use peacock feathers to make a fly')
+        inputbox.send_keys('Buy peacock feathers')
         inputbox.send_keys(Keys.ENTER)
+        self.wait_for_row_in_list_table('1:Buy peacock feathers')
 
         #他注意到清单有个唯一的URL
         edith_list_url=self.browser.current_url
