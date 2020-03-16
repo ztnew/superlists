@@ -16,3 +16,6 @@ git log --oneline
 
 回退到某个历史版本
 Git checkout 375ce42
+
+数据库迁移
+python manage.py makemigrations
