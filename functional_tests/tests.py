@@ -110,7 +110,7 @@ class NewVisitorTest(LiveServerTestCase):
         #弗朗西斯获得了他的唯一URL
         francis_list_url=self.browser.current_url
         self.assertRegex(francis_list_url,'/lists/.+')
-        self.assertEqual(francis_list_url,edith_list_url)
+        self.assertNotEqual(francis_list_url,edith_list_url)
 
         #这个页面还是没有伊迪丝的清单
         page_text=self.browser.find_element_by_tag_name('body').text
