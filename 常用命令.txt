@@ -19,3 +19,7 @@ Git checkout 375ce42
 
 Êý¾Ý¿âÇ¨ÒÆ
 python manage.py makemigrations
+
+python manage.py migrate
+
+
