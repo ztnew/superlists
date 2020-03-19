@@ -4,6 +4,8 @@ cd e:/python/superlists
 功能测试
 python manage.py test functional_tests
 
+STAGING_SERVER=103.133.179.113 python manage.py test functional_tests
+
 启动服务器
 python manage.py runserver
 
@@ -22,4 +24,6 @@ python manage.py makemigrations
 
 python manage.py migrate
 
+静态文件收集
+python manage.py collectstatic
 
